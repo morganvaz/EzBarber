@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "295429899190",
+    "firebase_url": "https://ezbarber-a28be-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ezbarber-a28be",
+    "storage_bucket": "ezbarber-a28be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295429899190:android:09f9e723a1c7a2d44ef717",
+        "android_client_info": {
+          "package_name": "dev.morganv.ezbarber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295429899190-pftubc2kudr22c07na6cmk4vb88cgaot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNLMC5yfz8mvijgY1fLqrvidMtHGG8gs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295429899190-pftubc2kudr22c07na6cmk4vb88cgaot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
