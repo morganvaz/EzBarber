@@ -13,6 +13,14 @@ import com.google.android.material.navigation.NavigationView;
 
 import dev.morganv.ezbarber.R;
 
+/*
+ ####################################################################
+ ####################################################################
+ ############# FOR NAVIGATION DRAWER - CURRENTLY UNUSED #############
+ ####################################################################
+ ####################################################################
+ */
+
 public class SecondActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;

@@ -1,6 +1,6 @@
 package dev.morganv.ezbarber.Models;
 
-import java.util.Objects;
+import androidx.annotation.NonNull;
 
 public class Appointment implements Comparable<Appointment>{
     private String date;
@@ -9,13 +9,11 @@ public class Appointment implements Comparable<Appointment>{
     private int hours, minutes;
     private boolean isComplete;
     private String treatment;
-    private boolean addedToList;
 
     public Appointment(){
         date = "";
         time = "";
         isComplete = false;
-        addedToList = false;
     }
 
     public void setDate(String date) {
@@ -41,10 +39,6 @@ public class Appointment implements Comparable<Appointment>{
         this.treatment = treatment;
     }
 
-    public void setAddedToList(boolean addedToList) {
-        this.addedToList = addedToList;
-    }
-
     public String getDate() {
         return date;
     }
@@ -63,10 +57,7 @@ public class Appointment implements Comparable<Appointment>{
         return treatment;
     }
 
-    public boolean isAddedToList() {
-        return addedToList;
-    }
-
+    @NonNull
     @Override
     public String toString() {
         return date + " at " + time + "\nTreatment: " + treatment;

@@ -101,7 +101,7 @@ public class MonthActivity extends AppCompatActivity implements
     }
 
     private void initTimePicker() {
-        final Button button_timepicker = (Button) findViewById(R.id.calendar_BTN_time);
+        final Button button_timepicker = findViewById(R.id.calendar_BTN_time);
         button_timepicker.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 timePickerDialog = TimePickerDialog.newInstance(MonthActivity.this, Hour, Minute,true );
@@ -120,7 +120,7 @@ public class MonthActivity extends AppCompatActivity implements
     }
 
     private void initDatePicker() {
-        final Button button_datepicker = (Button) findViewById(R.id.calendar_BTN_date);
+        final Button button_datepicker = findViewById(R.id.calendar_BTN_date);
         button_datepicker.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 datePickerDialog = DatePickerDialog.newInstance(MonthActivity.this, Year, Month, Day);
@@ -171,7 +171,14 @@ public class MonthActivity extends AppCompatActivity implements
                     temp.setDate(split[0]);
                     temp.setTime(split[1]);
                     temp.setTreatment(split[2]);
-                    appointmentsList.add(temp);
+                    boolean exists = false;
+                    for (int i = 0; i < appointmentsList.size(); i++)
+                        if (appointmentsList.get(i).equals(temp)) {
+                            exists = true;
+                            break;
+                        }
+                    if (!exists)    // this condition prevents double appointments on the list
+                        appointmentsList.add(temp);
                     Log.d(TAG, "Read from DB - Value is: " + dbValue);
                 }
                 Collections.sort(appointmentsList);

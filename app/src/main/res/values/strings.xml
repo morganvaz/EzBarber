@@ -21,7 +21,7 @@
     <string name="blow_dry_with_curling">Blow Dry with curling</string>
     <string name="hair_cut_with_blow_dry">Hair Cut with Blow Dry</string>
     <string name="from_65">From 65$</string>
-    <string name="mens_hair_cut">Mens Hair Cut</string>
+    <string name="men_hair_cut">Men Hair Cut</string>
     <string name="from_40">From 40$</string>
     <string name="color">Color</string>
     <string name="basic_tint">Basic Tint</string>
@@ -49,4 +49,5 @@
     <string name="partial_highlights">Partial Highlights</string>
     <string name="gloss">Gloss</string>
     <string name="availability">Availability</string>
+    <string name="logo">logo</string>
 </resources>

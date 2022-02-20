@@ -32,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="5dp"
-            app:srcCompat="@drawable/ic_logo_small" />
+            app:srcCompat="@drawable/ic_logo_small"
+            android:contentDescription="@string/logo" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -130,7 +131,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="250dp"
                         android:layout_height="match_parent"
-                        android:text="@string/mens_hair_cut"
+                        android:text="@string/men_hair_cut"
                         android:textSize="18sp" />
 
                     <com.google.android.material.textview.MaterialTextView

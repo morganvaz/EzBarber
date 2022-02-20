@@ -8,7 +8,7 @@ public class Treatment {
         treatments[0] =  "Blow Dry 50$";
         treatments[1] =  "Blow Dry with curling 55$";
         treatments[2] =  "Hair Cut with Blow Dry 65$";
-        treatments[3] =  "Mens Hair Cut 40$";
+        treatments[3] =  "Men Hair Cut 40$";
         treatments[4] =  "Basic Tint 65$";
         treatments[5] =  "Full Highlights 100$";
         treatments[6] =  "Partial Highlights 75$";

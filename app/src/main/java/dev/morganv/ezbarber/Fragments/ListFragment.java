@@ -42,7 +42,7 @@ public class ListFragment extends Fragment {
         return view;
     }
 
-    public void updateAppointment(ArrayList<Appointment> appointmentList){
+    public void updateAppointment(ArrayList<Appointment> appointmentList) {
         for (MaterialTextView appointment : appointments)
             appointment.setText("");
 
@@ -52,11 +52,8 @@ public class ListFragment extends Fragment {
         else
             length = appointmentList.size();
 
-        for (int i=0; i<length; i++){
-            if (!appointmentList.get(i).isAddedToList()){
-                appointmentList.get(i).setAddedToList(true);
-                appointments[i].setText(appointmentList.get(i).toString());
-            }
+        for (int i = 0; i < length; i++) {
+            appointments[i].setText(appointmentList.get(i).toString());
         }
     }
 
